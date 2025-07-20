@@ -1,0 +1,74 @@
+/* src/pages/HomePage.css */
+
+.homepage-layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* --- Sidebar --- */
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 260px;
+  background-color: var(--sidebar-bg);
+  color: var(--sidebar-text);
+  padding: 25px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h1 {
+  font-size: 1.8em;
+  color: white;
+  margin: 0 0 50px 0;
+  text-align: center;
+  font-weight: 600;
+}
+
+.sidebar nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar nav a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--sidebar-text);
+  text-decoration: none;
+  padding: 15px 20px;
+  border-radius: var(--border-radius);
+  margin-bottom: 10px;
+  font-size: 1.1em;
+  font-weight: 500;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.sidebar nav a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--sidebar-text-hover);
+}
+
+.sidebar nav a.active {
+  background-color: var(--primary-accent);
+  color: white;
+}
+
+/* --- Logout Button --- */
+.logout-btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 1em;
+  font-weight: 500;
+  color: white;
+  background-color: #343a40;
+  border: 1px solid #495057;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.logout-btn:hover {
+  background-color: #495057;
+}

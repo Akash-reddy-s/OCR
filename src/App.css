@@ -1,0 +1,45 @@
+/* src/App.css */
+
+/* --- Modern Color Palette & Font --- */
+:root {
+  --primary-bg: #f8f9fa; /* Light grey background for content */
+  --secondary-bg: #ffffff; /* White for cards and inputs */
+  --sidebar-bg: #212529; /* Off-black for the sidebar */
+  --primary-accent: #0d6efd; /* A vibrant blue for buttons and links */
+  --primary-accent-hover: #0b5ed7;
+  --text-primary: #212529; /* Dark text for high contrast */
+  --text-secondary: #6c757d; /* Lighter text for subheadings */
+  --sidebar-text: #dee2e6;
+  --sidebar-text-hover: #ffffff;
+  --border-color: #dee2e6;
+  --error-color: #dc3545;
+  --success-color: #198754;
+
+  --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --border-radius: 8px;
+  --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family);
+  background-color: var(--primary-bg);
+  color: var(--text-primary);
+}
+
+/* --- Global Content Styling --- */
+.content {
+  flex-grow: 1;
+  padding: 40px;
+  background-color: var(--primary-bg);
+}
+
+.content h2 {
+  font-size: 2em;
+  font-weight: 600;
+  color: var(--text-primary);
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 15px;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
